@@ -1,0 +1,254 @@
+/* font-family: 'Josefin Sans', sans-serif; */
+::-webkit-scrollbar {
+    width: 0em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+.Main-Apparel-Container{
+    display: flex;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    color: rgb(0, 0, 0);
+}
+.bg-dark{
+    background: linear-gradient(135deg, hsl(0, 0%, 13%), hsl(0, 1%, 13%));
+    color: rgb(254, 254, 254);
+    animation: 1.5s fadeEffect ease-in-out;
+}
+.Apparel-model{
+ float: right;
+ height: 100%;
+ animation: 1.5s toBottom ease forwards;
+}
+.Apparel-model  > img{
+    width: 500px;
+    object-fit: cover;
+    height: 100%;
+}
+.hero-2{
+    display: none;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    padding: 3rem ;
+    height: 70vh;
+    align-items: start;
+    animation: 1.5s toTop ease forwards;
+}
+.Apparel-Content{
+    margin: auto;
+    margin-top: 3rem;
+}
+.Apparel-Content > h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4.6875rem;
+    line-height: 5rem;
+    margin-top: 1.875rem;
+    letter-spacing: 0.625rem;
+}
+.Apparel-Content > h1 > span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+
+}
+.Apparel-Content > p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 36%, 70%);
+    padding-block: 1.25rem;
+    font-size: 1.1rem;
+    width: 75%;
+    line-height: 1.5625rem;
+}
+.Apparel-Content > form > input{
+    width: 70%;
+    padding: 0.9375rem;
+    border-radius: 1.5625rem;
+    border: 1px solid  hsl(0, 36%, 70%);
+    outline: none;
+    background-color: #F5F5DC;
+    background-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: rgb(255, 148, 148);
+    font-size: 1.1rem;
+}
+.Apparel-Content > form > button{
+    margin-left: -5rem;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 14px 35px 14px 35px;
+    color:white;
+    border: 1px solid  hsl(0, 36%, 70%);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.5s ease-in-out;
+    animation: animation-1 2s ease-in-out 0.5s infinite both alternate-reverse;
+}
+.Apparel-Content  > form >  button:hover{
+    background: linear-gradient(135deg, hsl(0, 92%, 80%), hsl(0, 88%, 86%));
+    box-shadow: 0px 2px 5px black;
+}
+.btn-dark-mode-container{
+    position: fixed;
+    top: 40%;
+    width: 100%;
+    right: 0%;
+    left  : 0%;
+    z-index: 100;
+}
+    .btn-toggle {
+    padding: 45px 10px 45px 10px;
+    font-size: 25px;
+    background: linear-gradient(135deg, hsl(0, 92%, 80%), hsl(0, 88%, 86%));
+    box-shadow: 0px 2px 5px black;
+    cursor: pointer;
+    border: none;
+    animation: 1s fade-1 ease-in-out;
+    transition: all 1s ease-in-out;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .btn-toggle > .fa-sun{
+    color: rgba(255, 255, 0, 0.748);
+  }
+  .change-color {
+    background: linear-gradient(360deg, hsl(251, 100%, 13%), hsl(259, 100%, 17%));
+    box-shadow: 0px 2px 5px rgb(255, 254, 254);
+    transition: all 1s ease-in-out;
+  }
+  .fa-moon{
+    color:  #F5F5DC;
+  }
+  ::placeholder{
+    padding-left: 1.25rem;
+    color: hsl(0, 92%, 79%);
+    font-weight: 400;
+}
+.error-notified-container{
+    padding: 15px;
+}
+div > .error{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: red;
+    text-transform:capitalize;
+    letter-spacing: 0.5px;
+}
+.fa-check-double{
+    color: rgb(2, 182, 107);
+}
+.notify{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: #02b66b;
+    text-transform:capitalize;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+
+@keyframes animation-1 {
+    
+    0%{
+        margin-left: -5rem;
+    }
+    100%{
+        margin-left: -3.5rem;
+    }
+}
+@keyframes fadeEffect {
+    
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes toTop {
+    
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes toBottom {
+    
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotate(-5deg); }
+  50% { transform: translateX(5px) rotate(5deg); }
+  75% { transform: translateX(-5px) rotate(-5deg); }
+  100% { transform: translateX(0); }
+}
+@media(max-width:1000px){
+    .flex-column{
+        height: 100%;
+        padding: 0;
+        margin-left: 0;
+    }
+    .Apparel-model  > img{
+        display: none;
+    }
+    .hero-2{
+       display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .hero-2 > img{
+        image-rendering: optimizeQuality;
+        image-resolution: 300dpi;
+        filter:brightness(100%);
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        object-position: right;
+    }
+    .Apparel-logo,.Apparel-Content{
+        padding-block: 20px;
+        margin-left: 20px;
+    }
+    .Apparel-Content{
+        text-align: center;
+    }
+    .Apparel-Content > p {
+        margin: auto;
+    }
+}
+@media(max-width:500px){
+   
+    .Apparel-Content > h1 {
+        font-size: 3rem;
+    }
+   
+}
+@media(max-width:400px){
+   
+    .Apparel-Content > h1 {
+        font-size: 2.1rem;
+    }
+    .Apparel-Content > p {
+        font-size: 1rem;
+        width: 100%;
+    }
+   
+}
