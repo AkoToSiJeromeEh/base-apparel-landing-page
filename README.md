@@ -1,6 +1,6 @@
 🔥 Darling--base--apparel
  
-🚀 rockeChallenge - Base Apparel
+🚀 Frontend Mentor Challenge
 
 🧔 Hi everyone, I just wanted to share my work, which is a challenge from the Frontend Mentor website. This challenge is perfect for practicing your Frontend skills. I completed it using React.js and the useState hook. If you have any further questions, please don't hesitate to message me. I would also greatly appreciate any feedback on my code. That's all, mabuhay!
 
